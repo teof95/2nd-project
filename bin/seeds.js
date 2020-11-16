@@ -163,8 +163,8 @@ const drugs = [{
 ];
 
 
-need to update those:
-    Drugs.create(drugs)
+// need to update those:
+Drug.create(drugs)
     .then((drugsFromDB) => {
         console.log(`Created ${drugsFromDB.length} drugs`);
         mongoose.connection.close();

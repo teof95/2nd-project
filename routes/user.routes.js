@@ -180,5 +180,14 @@ router.post("/logout", (req, res) => {
 
 
 
+//----------------------------------->
+router.get('/message', (req, res, next) => {
+    res.render('message');
+
+});
+
+
+
+
 
 module.exports = router;

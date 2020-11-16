@@ -1,0 +1,18 @@
+<div class="drugs">
+<h1>Legal-Illegal Drugstore</h1>
+<p>Click on the drugs to check the drugs!</p>
+<div class="drug">
+        {{#each drugsDB}}
+        <div class="onedrug">
+            <img src="{{this.image}}" alt="{{this.name}}">
+            <h2>{{this.name}}</h2>
+            <h2>{{this.look}}</h2>
+            <h2>{{method}}</h2>
+            <h2>{{method}}</h2>
+            <a href="/drugs/{{this._id}}">See More</a>
+        </div>
+        {{/each}}
+            <a href="/">Go back</a>
+
+</div>
+</div>
