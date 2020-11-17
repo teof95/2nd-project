@@ -8,7 +8,7 @@ const Drug = require('../models/drug.model')
 router.get("/drugs", (req, res, next) => {
     Drug.find({})
         .then((drugsDB) =>
-            res.render("drugs", { drugsDB })
+            res.render("drugs", { drugsDB }),
         )
         .catch((error) => `Error while fetching all drugs: ${error}`);
 });
