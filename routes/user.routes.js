@@ -22,28 +22,18 @@ router.get("/signup", (req, res, next) => {
 // get the information user inputted in the form and properly store them in the database.
 
 router.post("/signup", (req, res, next) => {
-    const { username, email, password } = req.body;
+    const { username, password } = req.body;
 
     // Validate that incoming data is not empty.
-    if (!username || !email || !password) {
+    if (!username || !password) {
         res.render("/signup", {
-            email,
             username,
-            errorMessage: "All fields are mandatory. Please provide your username, email and password.",
+            errorMessage: "All fields are mandatory. Please provide your username and password.",
         });
         return;
     }
 
-    const emailFormatRegex = /^\S+@\S+\.\S+$/;
 
-    if (!emailFormatRegex.test(email)) {
-        res.status(500).render("signup", {
-            email,
-            username,
-            validationError: "Please use a valid email address.",
-        });
-        return;
-    }
 
     // Strong password pattern.
     const strongPasswordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
@@ -51,7 +41,6 @@ router.post("/signup", (req, res, next) => {
     // Validate that incoming password matches regex pattern.
     if (!strongPasswordRegex.test(password)) {
         res.status(500).render("signup", {
-            email,
             username,
             errorMessage: "Password needs to have at least 6 chars and must contain at least one number, one lowercase and one uppercase letter.",
         });
@@ -60,7 +49,7 @@ router.post("/signup", (req, res, next) => {
 
     bcryptjs.hash(password, saltRounds)
         .then((pwHash) => {
-            User.create({ username, email, passwordHash: pwHash })
+            User.create({ username, passwordHash: pwHash })
                 // add user to session.
                 .then((user) => {
                     req.session.user = user;
@@ -137,26 +126,26 @@ router.post('/login', (req, res, next) => {
 
 
 
-//--------------------------------------->Main section<-----------------------------
+// //--------------------------------------->Main section<-----------------------------
 
-router.get('/main', (req, res, next) => {
-    if (req.session.user) {
-        res.render('main');
-    } else {
-        res.redirect('/login')
-    }
-});
+// router.get('/main', (req, res, next) => {
+//     if (req.session.user) {
+//         res.render('main');
+//     } else {
+//         res.redirect('/login')
+//     }
+// });
 
 
-//--------------------------------------->Private section<-----------------------------
+// //--------------------------------------->Private section<-----------------------------
 
-router.get('/private', (req, res) => {
-    if (req.session.user) {
-        res.render('private');
-    } else {
-        res.redirect('/login')
-    }
-});
+// router.get('/private', (req, res) => {
+//     if (req.session.user) {
+//         res.render('private');
+//     } else {
+//         res.redirect('/login')
+//     }
+// });
 
 
 
