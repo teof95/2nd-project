@@ -165,6 +165,7 @@ router.post("/logout", (req, res) => {
     // Alternative 1 for logging out
     req.session.destroy();
     res.redirect("/");
+    console.log("logout hit")
 });
 
 
