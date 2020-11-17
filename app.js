@@ -36,13 +36,17 @@ sessionConnect(app);
 
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+app.locals.title = 'Iron drugstore and information center';
 
 const index = require('./routes/index.routes');
 const authRouter = require('./routes/user.routes');
+const drugsRouter = require('./routes/drugs.routes');
+
 
 
 app.use('/', index);
 app.use('/', authRouter);
+app.use('/', drugsRouter);
+
 
 module.exports = app;
