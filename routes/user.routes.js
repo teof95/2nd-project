@@ -180,7 +180,7 @@ router.post("/logout", (req, res) => {
 
 
 
-//----------------------------------->
+//--------------->message<-------------------->
 router.get('/message', (req, res, next) => {
     res.render('message');
 

@@ -20,8 +20,9 @@ const drugs = [{
         duration: 'How long the effects last and the drug stays in your system depends on how much you’ve taken, your size, whether you’ve eaten and what other drugs you may have also taken. To kick in: When taken orally, ecstasy normally takes 30 minutes to kick in, but it could take as little as 20 minutes, or it may take over an hour or more. Some other (more dangerous) drugs sold as ecstasy take longer to kick in. How long it lasts: Users tend to feel high for 2 to 4 hours. You might still experience some physical effects, like a fast heart beat or insomnia (not being able to sleep), for a few hours after you stop feeling high – especially if you take a lot.',
         mixing: 'Yes, any time you mix drugs together you take on new risks. Things that affect your risk include the type of drug, the strength and how much you take.',
         addiction: 'It is possible to build up tolerance to ecstasy, which means people need to take more of the drug to get the same buzz. You may also develop a psychological dependence, which is a strong desire to keep on using even if you think your use is having harmful consequences.',
-        price: '3 €',
+        price: '3',
         image: 'https://i.ibb.co/6XLW93C/ecstasy.jpg',
+        video: 'https://www.youtube.com/embed/TxSnUMfgAUI',
         alsoCalled: ['Dizzle', 'Superman', 'Molly', 'Beans', 'Mitsubishis']
 
 
@@ -36,6 +37,7 @@ const drugs = [{
         addiction: 'PMA is very addictive',
         price: '40',
         image: 'https://i.ibb.co/sw9gdWH/PMA.jpg',
+        video: 'https://www.youtube.com/embed/nP6zYIdyIrA',
         alsoCalled: ['Red Mitsubishi', 'Pmma', 'Pink Mcdonalds', 'Pink Ecstasy', 'Mitsubishi Turbo', 'Killer', 'Dr Death', 'Double Stacked', 'Chicken Yellow', 'Chicken Fever']
     },
 
@@ -49,18 +51,20 @@ const drugs = [{
         addiction: 'Benzodiazepines can cause psychological and physical addiction and, because tolerance increases over time, users may have to keep increasing their dose either to get the same hit, or just to maintain the initial positive medical effect on their anxiety or insomnia.  It is because of the risk of dependence (and because they don’t work as well long-term) that benzodiazepines are normally recommended to be only used for short periods of time and only for severe cases.  Withdrawal can cause unpleasant symptoms like a pounding headache, nausea, anxiety and confusion. Some people report having withdrawal symptoms after using benzodiazepines for a relatively short time (for example, a few weeks).',
         price: '20',
         image: 'https://i.ibb.co/HVXs4k0/Benzodiazepines.jpg',
+        video: 'https://www.youtube.com/embed/l53VAAU4akQ',
         alsoCalled: ['Alprazolam', 'Benzos', 'Blues', 'Diazepam', 'Downers', 'Etizolam', 'Rohypnol', 'Roofies', 'Temazepam', 'Valium', 'Vallies', 'Xanax']
     },
     {
-        name: 'ecstasy',
-        look: 'Ecstasy comes in pill or powder form. When it’s a powder it’s called by its chemical name, MDMA, but it’s the same drug as ecstasy. Ecstasy pills can be white, coloured, round, square or pressed into any shape. Some pills have designs stamped into them, like well known company logos that the pills are then named after. Ecstasy powder looks like white/grey crystals and is called MDMA, mandy or MD. ',
-        method: 'Ecstasy pills: Ecstasy pills are usually swallowed, although some people crush them up and snort them. The amount of MDMA in ecstasy pills varies massively. Some pills sold as ecstasy actually contain other, more dangerous, drugs that take longer to kick in. For this reason, you should never take a whole pill in one go, even if you’ve taken ecstasy before. Drinking too much (including water) can also be dangerous. Users should sip no more than a pint of water or non-alcoholic drink every hour. MDMA powder: People usually take MDMA powder by dabbing it onto their gums or by swallowing it wrapped in a cigarette paper, which is sometimes called ‘bombing’. MDMA users often start by dabbing just a small amount of powder and waiting for the effects to kick in. Like with pills, drinking too much (including water) can also be dangerous. Users should sip no more than a pint of water or non-alcoholic drink every hour.',
-        effect: 'Most people feel: very happy – hence the name ‘loved up’ – users often feel love and affection for the people they are with and the strangers around them energised and alert Ecstasy can also make people feel more in tune with their surroundings and like the music is more intense, which is why people sometimes take it in nightclubs and at parties. Some users have reported feelings of: anxiety panic attacks confused episodes paranoia and even psychosis after taking ecstasy How does it make people behave? Lots of people feel very chatty and uninhibited on ecstasy, which makes them open up and talk about things they might not do normally. Physical side effects can include: dilated pupils tingling sensations tightening or moving of the jaw muscles (gurning) raised body temperature a faster heartbeat and nausea',
-        duration: 'How long the effects last and the drug stays in your system depends on how much you’ve taken, your size, whether you’ve eaten and what other drugs you may have also taken. To kick in: When taken orally, ecstasy normally takes 30 minutes to kick in, but it could take as little as 20 minutes, or it may take over an hour or more. Some other (more dangerous) drugs sold as ecstasy take longer to kick in. How long it lasts: Users tend to feel high for 2 to 4 hours. You might still experience some physical effects, like a fast heart beat or insomnia (not being able to sleep), for a few hours after you stop feeling high – especially if you take a lot.',
-        mixing: 'Yes, any time you mix drugs together you take on new risks. Things that affect your risk include the type of drug, the strength and how much you take.',
-        addiction: 'It is possible to build up tolerance to ecstasy, which means people need to take more of the drug to get the same buzz. You may also develop a psychological dependence, which is a strong desire to keep on using even if you think your use is having harmful consequences.',
-        price: '5',
-        image: 'https://i.ibb.co/6XLW93C/ecstasy.jpg',
+        name: 'LSD',
+        look: 'LSD is usually sold as small squares of paper with pictures on them, known as tabs or blotters.  LSD can also be sold as a liquid or as tiny pellets, known as micro dots.  ',
+        method: 'By swallowing it if it’s a tab or a pellet (micro dot) By dropping it onto the tongue if it’s liquid By dropping it onto food or into a drink if it’s liquid LSD stands for its chemical name, lysergic acid diethylamide, and is commonly called acid.  It`s a powerful hallucinogenic drug, which means you’re likely to experience a distorted view of objects and reality if you take it. The experience of taking LSD is called tripping.  LSD trips can last several hours and can be very intense. Trips are often described as ‘good’ or ‘bad’ depending on whether the experience was enjoyable or distressing.  When you take LSD, there’s no way of knowing how you might feel or what kind of trip you’re going to go on. And once you start tripping it’s difficult to control the effects.  LSD can also be taken in very small amounts, and this is sometimes called micro-dosing.',
+        effect: 'For most people, the world appears distorted when they take LSD. Colours, sounds, objects and even time can all seem very strange and disturbing.  Taking LSD can make you feel:  euphoric giggly in awe of the people and things around you energised excited empathetic It can also make you:  see and hear things that aren’t there (hallucinate) confused suspicious anxious panicked frightened overwhelmed LSD feeds off your imagination so every person’s experience is unique.  How the trip goes will be affected by how much you take, your surroundings, who you’re with and how comfortable you are with them, as well as by your mood.  If you’re in a bad mood, feeling worried or depressed, the LSD might make those feelings worse.',
+        duration: 'How long the effects last and the drug stays in your system depends on how much you’ve taken, your size, whether you’ve eaten and what other drugs you may have also taken.  To kick in Acid can take from 20 minutes to two hours to take effect, but it really depends on how much the user takes.  If you feel that you’re having, or are going to have, a bad trip, let your friends know and get their help. Go to a nice, quiet spot where you feel safe and can relax. ',
+        mixing: ' Everytime you mix drugs you take on new risks. However, some drugs are more dangerous to mix with LSD than others.',
+        addiction: 'There is no evidence to suggest that LSD is addictive, but you can become tolerant to its effects. This means you need to take more of it to get the same effect as before.  ',
+        price: '68',
+        image: 'https://i.ibb.co/tskg0jv/LSD.jpg',
+        video: 'https://www.youtube.com/embed/kvalFfavNpU',
         alsoCalled: ['Dizzle', 'Superman', 'Molly', 'Beans', 'Mitsubishis']
     },
     {
@@ -73,6 +77,7 @@ const drugs = [{
         addiction: 'Yes, cocaine is very addictive. This is because regular use changes the way the brain releases dopamine, a brain chemical that makes you feel happy.  Cocaine is mostly known for causing psychological dependence (addiction), but users can sometimes continue to use cocaine just to overcome the negative after effects of using. This can lead to a binge pattern of use and increase the risk of dependence.',
         price: '100',
         image: 'https://i.ibb.co/XZdMk15/cocaine.jpg',
+        video: 'https://www.youtube.com/embed/OMMOlj68mnM',
         alsoCalled: ['Blow', 'Coke', 'Crack', 'Charlie ', 'White', 'Wash', 'Toot', 'Flake']
     },
     {
@@ -85,6 +90,7 @@ const drugs = [{
         addiction: 'Yes, codeine is addictive.  Over time codeine can produce cravings and a psychological desire to keep on using.  Some people get addicted to codeine after being prescribed it to treat physical pain. They can experience withdrawal symptoms if they stop taking the tablets and this can be a reason that people continue taking it or seek codeine illegally.  Tolerance can also build up, so that users have to take more just to get the same effects or to avoid unpleasant withdrawals.  Physical dependence is common in regular users. ',
         price: '50',
         image: 'https://i.ibb.co/cQmHD3G/codaine.jpg',
+        video: 'https://www.youtube.com/embed/o1yUKfvnqRQ',
         alsoCalled: ['Syrup', 'Nurofen Plus/Max', 'Cough Syrup', 'Codis500', 'Co-codamol']
     },
     {
@@ -97,6 +103,7 @@ const drugs = [{
         addiction: 'Speed is an addictive drug.  If you take a lot on a regular basis you can build up a tolerance to the drug so that you need higher doses just to get the same buzz or feel "normal".  Regular users can increasingly take speed to avoid unpleasant withdrawals.',
         price: '60',
         image: 'https://i.ibb.co/MsHfb0k/speed.jpg',
+        video: 'https://www.youtube.com/embed/nUDA7sGGEG4',
         alsoCalled: ['Whizz', 'Sulph', 'Paste', 'Billy', 'Base', 'Amphetamine Sulphate', 'Amphetamine']
     },
     {
@@ -109,6 +116,7 @@ const drugs = [{
         addiction: 'Research suggests that you can become dependent on synthetic cannabinoids, especially if you use them regularly. Whether or not you’re dependent will be influenced by a number of factors, including how long you have been using it, how much you use and whether you are just more prone to becoming dependent.  If you have used synthetic cannabinoids regularly you could find it difficult to stop using and you might experience psychological and physical withdrawals when you do stop. The withdrawals can include cravings for synthetic cannabinoids, irritability, mood changes, loss of appetite, weight loss, difficulty sleeping and even sweating, shaking and diarrhoea.',
         price: '30',
         image: 'https://i.ibb.co/rtWngfm/Synthetic-cannabinoids.jpg',
+        video: 'https://www.youtube.com/embed/jLHuLWggDvg',
         alsoCalled: ['X', 'Tai High Hawaiian Haze', 'Spice', 'Mary Joy', 'Exodus Damnation', 'Ecsess', 'Devil Weed', 'Clockwork Orange', 'Bombay Blue Extreme', 'Blue Cheese', 'Black Mamba', 'Annihilation', 'Amsterdam Gold']
     },
     {
@@ -121,6 +129,7 @@ const drugs = [{
         addiction: 'Over time, the effects of heroin on the brain can cause cravings and a strong drive to keep on using.  As heroin is used on a regular basis, the body builds up a tolerance, so that users have to start taking more and more.  Doctors have developed a number of effective ways to treat addiction to street heroin. These include using certain safer drugs to replace the street heroin, such as methadone and buprenorphine.  ',
         price: '120',
         image: 'https://i.ibb.co/168J4ZP/Heroin.jpg',
+        video: 'https://www.youtube.com/embed/RGvllptSxDQ',
         alsoCalled: ['Smack', 'Skag', 'Horse', 'Gear', 'Brown']
     },
     {
@@ -133,6 +142,7 @@ const drugs = [{
         addiction: 'People who become addicted to ketamine will keep taking it – whether they’re aware of the health risks or not. Others will attend drug treatment services to help them stop.  People who use ketamine regularly can develop a tolerance to it, which could lead to them taking even more to get the effects they’re looking for.  There are no physical withdrawal symptoms with ketamine, so ketamine addiction is sometimes called a psychological dependence.',
         price: '35',
         image: 'https://i.ibb.co/HB83NqX/Ketamine.jpg',
+        video: 'https://www.youtube.com/embed/d_ey_a_yN6Q',
         alsoCalled: ['VitaminK', 'Super K', 'Special K', 'K', 'Green', 'Donkey Dust', 'Ket', 'Wonk']
     },
     {
@@ -145,6 +155,7 @@ const drugs = [{
         addiction: 'Heavy cannabis users often get cravings and find it hard not to take the drug – even when they know it’s causing them physical, mental or social problems.  When heavy users do try to stop they can:  feel moody and irritable feel sick find it hard to sleep find it hard to eat experience sweating and shaking get diarrhoea If you roll your spliffs with tobacco, you’re also at risk of getting addicted (or staying addicted) to nicotine.',
         price: '15',
         image: 'https://i.ibb.co/bmbjGGB/Cannabis.jpg',
+        video: 'https://www.youtube.com/embed/Nlcr1jd_Tok',
         alsoCalled: ['Weed', 'Skunk', 'Sinsemilla', 'Sensi', 'Resin', 'Puff', 'Pot', 'Marijuana', 'Herb', 'Hashish', 'Hash', 'Grass', 'Ganja', 'Draw', 'Dope', 'Bud', 'Bhang', 'Pollen']
     },
     {
@@ -157,13 +168,13 @@ const drugs = [{
         addiction: 'Magic mushrooms are not addictive, but as with LSD, you can become tolerant to the effects quite quickly – and that means you’ll need to take more to get the same effect as before.  ',
         price: '45',
         image: 'https://i.ibb.co/Qdjxbdt/Magic-mushrooms.jpg',
+        video: 'https://www.youtube.com/embed/7S9AyYFAAK8',
         alsoCalled: ['Shrooms', 'Philosopher’s Stones', 'Mushies', 'Magics', 'Liberty Caps', 'Liberties', 'Amani', 'Agaric']
     },
 
 ];
 
 
-// need to update those:
 Drug.create(drugs)
     .then((drugsFromDB) => {
         console.log(`Created ${drugsFromDB.length} drugs`);
