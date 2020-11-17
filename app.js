@@ -17,7 +17,7 @@ const app = express();
 
 // require database configuration
 require('./configs/db.config');
-
+require('./configs/passport-setup');
 // Middleware Setup
 app.use(logger('dev'));
 app.use(bodyParser.json());

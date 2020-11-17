@@ -1,5 +1,6 @@
 const { Router } = require('express');
 const router = new Router();
+const passport = require('passport');
 const bcryptjs = require('bcryptjs');
 const User = require("../models/User.model");
 const mongoose = require("mongoose");
@@ -186,6 +187,13 @@ router.get('/message', (req, res, next) => {
 
 });
 
+router.get('/auth/google', passport.authenticate('google', {
+    scope: ['profile']
+}))
+
+router.get('/auth/google/redirect', passport.authenticate('google'), (req, res) => {
+    res.send('you reached the redirect URI');
+});
 
 
 
