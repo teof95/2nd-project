@@ -13,24 +13,32 @@
 
 <div class="drugs">
 <h1>Web-Shop</h1>
-<p>Please add your items to the cart</p>
-<div class="drug">
+
+<div class="drugscontainer">
         {{#each newDrugsDB}}
         <div class="onedrug">
-            <h2>{{this.name}}</h2>
+            <h2 style="word-wrap: break-word; width: 90%">{{this.name}}</h2>
             <a href="/drugs/{{this._id}}"><img src="{{this.image}}" alt="HTML tutorial" style="width:200px;"></a>
 
             <h2>Price</h2>
-            <p>{{price}}</p>
-<button class="cartbtn" onClick="cartLS.add({id: {{cartId}}, name: '{{this.name}}', price: {{this.price}} })">
-    <a>Add to cart</a>
-</button>
+            <p id="price">{{price}} €</p>
+			<button class="cartbtn" onClick="cartLS.add({id: {{cartId}}, name: '{{this.name}}', price: {{this.price}} })">
+   				<a>Add to cart</a>
+			</button>
 
         </div>
         {{/each}}
-            <a href="/">Go back</a>
 </div>
+
 </div>
+   
+    <div class="usrbtn">
+
+        <div class="main-wsbtn">
+            <a class="link" href="user-profile/">Go back</a>
+         </div>
+      
+    </div>
 
 
 
@@ -64,6 +72,17 @@
 
         {{!-- -----> End of cart<----- --}}
 	</div>
+
+
+
+	<div>
+ 		<form class="a" action="/payment" method="GET">
+    	<input class="a" type="submit" value="Pay now!">
+ 		</form>
+  </div>
+
+
+
 	<script>
 		function renderCart(items) {
             console.log(items);
@@ -83,11 +102,11 @@
 							<button type="button" class="btn btn-block btn-sm btn-outline-primary"
 								onClick="cartLS.quantity(${item.id},-1)">-</button>
 						</td>
-						<td class="text-right">$${item.price}</td>
-						<td class="text-right"><Button class="btn btn-primary" onClick="cartLS.remove(${item.id})">Delete</Button></td>
+						<td class="text-right">€${item.price}</td>
+						<td class="text-right"><Button class="cartbtn" onClick="cartLS.remove(${item.id})">Delete</Button></td>
 					</tr>`).join("")
 
-			$total.innerHTML = "$" + cartLS.total()
+			$total.innerHTML = "€" + cartLS.total()
 		}
         console.log(cartLS);
 		renderCart(cartLS.list());

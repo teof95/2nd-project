@@ -90,7 +90,7 @@ li a {
 }
 
 li a:hover:not(.active),
-button:hover {
+button.logout:hover {
     background-color: rgb(204, 45, 45);
 }
 
@@ -518,6 +518,7 @@ h2 em {
     -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
     -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
     transition: all 0.4s ease 0s;
+    cursor: pointer;
 }
 
 .drugscontainer {
@@ -706,4 +707,13 @@ h2 em {
 
 #paragraph {
     text-align: justify;
+}
+
+input[type=payment] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
