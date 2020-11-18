@@ -511,3 +511,17 @@ button:hover {
     -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
     transition: all 0.4s ease 0s;
 }
+
+.drugscontainer {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 65%;
+    margin-left: 20%;
+}
+
+.onedrug {
+    margin: 20px;
+}

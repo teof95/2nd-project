@@ -1,11 +1,11 @@
 <div class="drugs">
 <h1>Legal-Illegal Drugstore</h1>
 <p>Click on the drugs to check the drugs!</p>
-<div class="drug">
+<div class="drugscontainer">
         {{#each drugsDB}}
         <div class="onedrug">
-            <h2>{{this.name}}</h2>
-            <a href="/drugs/{{this._id}}"><img src="{{this.image}}" alt="HTML tutorial" style="width:400px;"></a>
+            <h2 style="word-wrap: break-word; width: 80%">{{this.name}}</h2>
+            <a href="/drugs/{{this._id}}"><img src="{{this.image}}" alt="HTML tutorial" style="width:200px;"></a>
 
             <h2>Price</h2>
             <p>{{price}}</p>
@@ -13,6 +13,7 @@
             <a href="/drugs/{{this._id}}">See More</a>
         </div>
         {{/each}}
+        </div>
             <a href="/">Go back</a>
-</div>
+
 </div>

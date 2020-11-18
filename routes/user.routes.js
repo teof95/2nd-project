@@ -165,13 +165,13 @@ router.post("/logout", (req, res) => {
     // Alternative 1 for logging out
     req.session.destroy();
     res.redirect("/");
-    console.log("logout hit")
+    console.log("You logged out")
 });
 
 
 
 
-//--------------->message<-------------------->
+//---------------------------------------->message<--------------------------------->
 router.get('/message', (req, res, next) => {
     res.render('message');
 
