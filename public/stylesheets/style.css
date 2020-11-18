@@ -528,7 +528,7 @@ h2 em {
     align-items: center;
     width: 65%;
     margin-left: 20%;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(131, 131, 131, 0.4);
 }
 
 .onedrug {
@@ -543,6 +543,7 @@ h2 em {
 
 .usrbtn {
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .main-btn a:hover {
@@ -648,14 +649,61 @@ h2 em {
     line-height: 1em;
 }
 
+
+/* ----------------end of animation styling--------- */
+
+#price {
+    color: white;
+    text-shadow: 2px 2px 4px #685e5e;
+    font-weight: 1000;
+}
+
+#wrkshopl {
+    float: left
+}
+
+#wrkshopr {
+    float: right
+}
+
 .imgbtns {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#price {
-    color: white;
-    text-shadow: 2px 2px 4px #685e5e;
-    font-weight: 1000;
+.imgtxt {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 65%;
+    margin-left: 20%;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+}
+
+.info {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 65%;
+    margin-left: 20%;
+}
+
+.image {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 65%;
+    margin-left: 20%;
+}
+
+#paragraph {
+    text-align: justify;
 }

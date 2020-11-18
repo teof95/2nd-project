@@ -1,46 +1,46 @@
 <div class="movie-details">
 <h1>{{foundDrug.name}}</h1>
-<div class="info">
-<div class="image">
-    <img src="{{foundDrug.image}}" alt="{{foundDrug.name}}" style="width:500px">
-    </div>
-    <div class="info">
 
-       <h3>What does it do to your brain and body:</h3>
-<iframe width="560" height="315" src={{foundDrug.video}} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-       <ul>
+       <div class="image">
+              <div class="upperimg">
+                     <img src="{{foundDrug.image}}" alt="{{foundDrug.name}}" style="width:200px">
+              </div>
+              
+              <div class="video">
+              <h3>What does it do to your brain and body:</h3>
+                     <iframe width="560" height="315" src={{foundDrug.video}} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+       </div>
 
-       </ul>
-<div class="hw">
-       <h3>What does it looks like:</h3>
-       <p>{{foundDrug.look}}</p>
-       <h3>What is the method people use it:</h3>
-       <p>{{foundDrug.method}}</p>
-       <h3>What are the effects:</h3>
-       <p>{{foundDrug.effect}}</p>
-       <h3>How long is the duration:</h3>
-       <p>{{foundDrug.duration}}</p>
-       <h3>Can you mix it with other drugs?</h3>
-       <p>{{foundDrug.mixing}}</p>
-       <h3>Does it become addictive?</h3>
-       <p>{{foundDrug.addiction}}</p>
-       <h3>What is the usual price?</h3>
-       <p>{{foundDrug.price}} €</p>
-       <h3>It is also called:</h3>
-       <p>{{foundDrug.alsoCalled}}</p>
-</div>
+       <div class="info">
+               
+              <div class="hw">
+                     <h3>What does it looks like:</h3>
+                     <p>{{foundDrug.look}}</p>
+                     <h3>What is the method people use it:</h3>
+                     <p>{{foundDrug.method}}</p>
+                     <h3>What are the effects:</h3>
+                     <p>{{foundDrug.effect}}</p>
+                     <h3>How long is the duration:</h3>
+                     <p>{{foundDrug.duration}}</p>
+                     <h3>Can you mix it with other drugs?</h3>
+                     <p>{{foundDrug.mixing}}</p>
+                     <h3>Does it become addictive?</h3>
+                     <p>{{foundDrug.addiction}}</p>
+                     <h3>What is the usual price?</h3>
+                     <p>{{foundDrug.price}} €</p>
+                     <h3>It is also called:</h3>
+                     <p>{{foundDrug.alsoCalled}}</p>
+              </div>
+       </div>
 
 
+       <div class="usrbtn">
+              <div class="main-wsbtn">
 
-</p>
-    </div>
-    </div>
-    <div class="usrbtn">
-    <div class="main-wsbtn">
-
-    <a href="/drugs">Go back</a>
-        </div>
-            </div>
+                     <a href="/drugs">Go back</a>
+              </div>
+       </div>
 
 
 </div>
