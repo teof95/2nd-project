@@ -1,5 +1,14 @@
 <div class="drugs">
 <h1>Medical drug store and information center</h1>
+
+    <div class="usrbtn">
+
+        <div class="main-wsbtn">
+            <a class="link" href="user-profile/">Go back</a>
+         </div>
+      
+    </div>
+
 <div class="drugscontainer">
         {{#each drugsDB}}
         <div class="onedrug">
@@ -9,7 +18,7 @@
 
             <div class="usrbtn">
                 <div class="main-wsbtn">
-                    <a href="/drugs/{{this._id}}">See More</a>
+                    <a href="/drugs/{{this._id}}">View More</a>
                 </div>
             </div>
 
@@ -20,11 +29,5 @@
 
 </div>  
 
-    <div class="usrbtn">
 
-        <div class="main-wsbtn">
-            <a class="link" href="user-profile/">Go back</a>
-         </div>
-      
-    </div>
 

@@ -3,11 +3,6 @@
 
 <body>
 
-
-
-
-
-
 {{#if user}}
 
 <h1 class="ml15">
@@ -17,6 +12,18 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
+<div class="imgbtns">
+
+  <div class="usrbtn">
+    <div class="main-wsbtn">
+      <a class="link" href='/drugs'>Drugs</a>
+    </div>
+
+    <div class="main-wsbtn">
+      <a class="link" href='/webshop'>webshop</a>
+    </div>
+  </div>
+  </div>
 
 
 
@@ -36,23 +43,6 @@ TDM can also detect poisoning with drugs, should the suspicion arise. The import
 <p id="paragraph"><img id="wrkshopr" src="https://labs.sogeti.com/wp-content/uploads/2015/09/064019.jpg" style="width: 400px; margin-left:15px;">
   The drugs that are monitored have some special features; most of them work best over a narrow therapeutic range. Below this range, the drug is not effective and the patient begins having symptoms again; above this range, the drug has negative, adverse, or toxic side effects. Since many people take more than one medication, there may be interactions between the drugs that affect the way the body absorbs or metabolizes one of them. Also, some patients do not take medications as prescribed or instructed. Monitoring helps identify these cases of noncompliance.</p>
 </div>
-
-
-
-<div class="imgbtns">
-
-  <div class="usrbtn">
-    <div class="main-btn">
-      <a class="link" href='/drugs'>Drugs</a>
-    </div>
-
-    <div class="main-wsbtn">
-      <a class="link" href='/webshop'>webshop</a>
-    </div>
-  </div>
-  </div>
-
-
 
 {{else}}
 <p>Still no logged in user, sorry!</p>

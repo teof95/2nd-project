@@ -529,7 +529,7 @@ h2 em {
     align-items: center;
     width: 65%;
     margin-left: 20%;
-    background: rgba(131, 131, 131, 0.4);
+    background: rgba(186, 195, 224, 0.7);
 }
 
 .onedrug {
@@ -580,10 +580,13 @@ h2 em {
 
 .usrbtn .main-wsbtn {
     display: inline-block;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .usrbtn .main-wsbtn a {
-    display: inline-block;
     background-color: #fff;
     border: 2px solid #fff;
     padding: 8px 15px;
@@ -668,9 +671,9 @@ h2 em {
 }
 
 .imgbtns {
-    display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
+    display: flex;
 }
 
 .imgtxt {
@@ -683,6 +686,7 @@ h2 em {
     margin-left: 20%;
     background: rgba(255, 255, 255, 0.4);
     padding: 20px;
+    margin-top: 20px;
 }
 
 .info {
@@ -707,13 +711,4 @@ h2 em {
 
 #paragraph {
     text-align: justify;
-}
-
-input[type=payment] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
 }
