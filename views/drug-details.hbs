@@ -1,39 +1,37 @@
 <div class="movie-details">
-<h1>{{name}}</h1>
+<h1>{{foundDrug.name}}</h1>
 <div class="info">
 <div class="image">
-    <img src="{{image}}" alt="{{name}}" style="width:500px">
+    <img src="{{foundDrug.image}}" alt="{{foundDrug.name}}" style="width:500px">
     </div>
     <div class="info">
 
        <h3>What does it do to your brain and body:</h3>
-<iframe width="560" height="315" src={{video}} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src={{foundDrug.video}} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
        <ul>
 
        </ul>
 <div class="hw">
        <h3>What does it looks like:</h3>
-       <p>{{look}}</p>
+       <p>{{foundDrug.look}}</p>
        <h3>What is the method people use it:</h3>
-       <p>{{method}}</p>
+       <p>{{foundDrug.method}}</p>
        <h3>What are the effects:</h3>
-       <p>{{effect}}</p>
+       <p>{{foundDrug.effect}}</p>
        <h3>How long is the duration:</h3>
-       <p>{{duration}}</p>
+       <p>{{foundDrug.duration}}</p>
        <h3>Can you mix it with other drugs?</h3>
-       <p>{{mixing}}</p>
+       <p>{{foundDrug.mixing}}</p>
        <h3>Does it become addictive?</h3>
-       <p>{{addiction}}</p>
+       <p>{{foundDrug.addiction}}</p>
        <h3>What is the usual price?</h3>
-       <p>{{price}}</p>
+       <p>{{foundDrug.price}}</p>
        <h3>It is also called</h3>
-       <p>{{alsoCalled}}</p>
+       <p>{{foundDrug.alsoCalled}}</p>
 </div>
 
 
-{{#each price}}
-{{this}} |
-{{/each}}
+
 </p>
     </div>
     </div>

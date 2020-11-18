@@ -1,0 +1,21 @@
+
+<div class="drugs">
+<h1>Web-Shop</h1>
+<p>Please add your items to the cart</p>
+<div class="drug">
+        {{#each drugsDB}}
+        <div class="onedrug">
+            <h2>{{this.name}}</h2>
+            <a href="/drugs/{{this._id}}"><img src="{{this.image}}" alt="HTML tutorial" style="width:200px;"></a>
+
+            <h2>Price</h2>
+            <p>{{price}}</p>
+<button class="cartbtn">
+    <a>Add to cart</a>
+</button>
+        </div>
+        {{/each}}
+            <a href="/">Go back</a>
+</div>
+</div>
+
