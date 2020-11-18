@@ -9,6 +9,7 @@
     },
     "dependencies": {
         "bcryptjs": "^2.4.3",
+        "cart-localstorage": "^1.1.5",
         "connect-mongo": "^3.2.0",
         "connect-mongodb-session": "^2.4.1",
         "cookie-parser": "^1.4.5",
@@ -27,6 +28,5 @@
     "devDependencies": {
         "nodemon": "^2.0.4",
         "dotenv": "^8.2.0"
-
     }
 }
