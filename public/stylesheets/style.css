@@ -528,6 +528,7 @@ h2 em {
     align-items: center;
     width: 65%;
     margin-left: 20%;
+    background: rgba(255, 255, 255, 0.4);
 }
 
 .onedrug {
@@ -539,6 +540,10 @@ h2 em {
 
 
 /* ------drugs button---- */
+
+.usrbtn {
+    margin-top: 20px;
+}
 
 .main-btn a:hover {
     background-color: #fff;
@@ -557,7 +562,7 @@ h2 em {
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: rgb(233, 233, 233);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: all 0.5s;
     transition: all 0.5s;
@@ -632,8 +637,8 @@ h2 em {
 /* ---------animation styling user-profile------- */
 
 .ml15 {
-    font-weight: 100;
-    font-size: 1.8em;
+    font-weight: 800;
+    font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 0.5em;
 }
@@ -641,4 +646,16 @@ h2 em {
 .ml15 .word {
     display: inline-block;
     line-height: 1em;
+}
+
+.imgbtns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#price {
+    color: white;
+    text-shadow: 2px 2px 4px #685e5e;
+    font-weight: 1000;
 }

@@ -19,37 +19,46 @@
 
 
 
-<img src="https://waag.org/sites/waag/files/2018-04/Bioshades-workshop.jpg" style="width: 400px;">
-
-
-
-
-<div class="usrbtn">
-  
-  <div class="main-btn">
-    <a class="link" href='/drugs'>Drugs</a>
+<div class="imgbtns">
+  <img src="https://waag.org/sites/waag/files/2018-04/Bioshades-workshop.jpg" style="width: 400px;">
   </div>
 
-  <div class="main-wsbtn">
-    <a class="link" href='/webshop'>webshop</a>
-  </div>
+<div>
+<h5>Therapeutic drug monitoring TDM</h5>
+<p>
+ Therapeutic drug monitoring (TDM), an important element in patient care, is the measurement of medication and metabolic concentrations in blood that will directly influence drug dosing. Its main focus is on drugs that can easily be under- or overdosed. It is a branch of clinical chemistry that is also handled by clinical pharmacy, clinical pharmacology, and specific medical specialists with or without the use of a laboratory at all, according to Philip D. Walson, professor of Pediatrics & Pharmacology, University of Cincinnati, and director, Clinical Pharmacology Division and Clinical Trials Office, Cincinnati Children’s Hospital Medical Center. 
+</p>
+<p>Occasionally, medications are used without monitoring of blood levels, as their dosage can generally be varied according to the clinical response a patient has to that substance, and physicians can use other tests such as blood pressure or temperature to tell if the dosage is correct. Walson says there are many drugs for which no objective or clinically meaningful objective signs or symptoms exist, and many others for which over- and underdosing produce similar symptoms (for example, digoxin produces arrhythmias if too much or too little is given, as do anticonvulsants and antiarrhythmics). In addition, he says, even for drugs for which effects can be measured, it can occasionally be useful to quantify concentrations such as in overdose or to document that noncompliance rather than resistance to a drug or its unusually rapid clearance is responsible for lack of effect. “TDM is routinely used for only a few drugs but can be useful in specific instances for almost all drugs,” he says.</p>
+<p>But in a small group of drugs this is impossible, as insufficient levels will lead to undertreatment or resistance, and excessive levels to toxicity and/or tissue damage, according to pharmaceutical manfacturers. Walson says the group, however, is not so small. He says use is limited by the availability of assays and TDM expertise, and is not a characteristic of many drugs at all. Since compliance is routinely common and results are accurately provided by most clinicians, some would argue that TDM is required for all drugs, he says.
+TDM can also detect poisoning with drugs, should the suspicion arise. The importance of TDM is self-evident, both in determining the most effective doses for treating certain diseases and avoiding drug toxicity. Drugs commonly monitored include those for heart disease, bacterial infections, epilepsy, asthma, chronic obstructive pulmonary disease (COPD), certain cancers, arthritis, and psychiatric disorders, and those designed to prevent rejection of transplanted organs.</p>
 
 </div>
 
+
+
+<div class="imgbtns">
+
+  <div class="usrbtn">
+    <div class="main-btn">
+      <a class="link" href='/drugs'>Drugs</a>
+    </div>
+
+    <div class="main-wsbtn">
+      <a class="link" href='/webshop'>webshop</a>
+    </div>
+  </div>
+  </div>
 
 
 
 {{else}}
 <p>Still no logged in user, sorry!</p>
 {{/if}}
-</body>
-
-
 <script>
 anime.timeline({loop: true})
   .add({
     targets: '.ml15 .word',
-    scale: [14,1],
+    scale: [1,1],
     opacity: [0,1],
     easing: "easeOutCirc",
     duration: 800,
@@ -60,9 +69,13 @@ anime.timeline({loop: true})
     duration: 1000,
     easing: "easeOutExpo",
     delay: 1000
-  });
+  })  ;
 
 </script>
+</body>
+
+
+
 
 
 </html>
