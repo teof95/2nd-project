@@ -11,20 +11,13 @@
 
     <nav>
       <a href="/"><img src="https://freepikpsd.com/wp-content/uploads/2019/10/drug-logo-png-4-Transparent-Images.png" width="70" height="70"></a>
-      
-
         <ul>
           
           <li><a href="/"> Home </a></li>
           <li><a href="/signup">Sign-up</a></li>
 
           {{#if user}}
-          {{!-- <li><a href="/" type="submit" method ="post" action='/logout' > Logout</a></li>  --}}
           <li><form action='/logout' method="post">    <button href="/" class='logout'type="submit">Logout</button></form></li>
-
-            {{!-- <li><a href="/logout"> Logout</a></li> --}}
- {{!-- <form action='/logout' method="post">    <button class='logout'type="submit">Logout</button>  </form> --}}
-
           {{else}}
           <li><a href="/login"> Login</a></li>
           {{/if}} 
