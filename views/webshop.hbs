@@ -15,16 +15,17 @@
 <h1>Web-Shop</h1>
 <p>Please add your items to the cart</p>
 <div class="drug">
-        {{#each drugsDB}}
+        {{#each newDrugsDB}}
         <div class="onedrug">
             <h2>{{this.name}}</h2>
             <a href="/drugs/{{this._id}}"><img src="{{this.image}}" alt="HTML tutorial" style="width:200px;"></a>
 
             <h2>Price</h2>
             <p>{{price}}</p>
-<button class="cartbtn">
+<button class="cartbtn" onClick="cartLS.add({id: {{cartId}}, name: '{{this.name}}', price: {{this.price}} })">
     <a>Add to cart</a>
 </button>
+
         </div>
         {{/each}}
             <a href="/">Go back</a>
@@ -33,61 +34,11 @@
 
 
 
-	<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-		<h1 class="my-0 mr-md-auto font-weight-normal">cart-localstorage</h1>
-
+	<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-black border-bottom shadow-sm">
+		<h1 class="my-0 mr-md-auto font-weight-normal">DRUG SHOPPING BASKET</h1>
 	</div>
 	<div class="container">
-		<h2>Products</h2>
-
-		<div class="card-deck mt-4 mb-4 text-center">
-			<div class="card mb-4 shadow-sm">
-				<div class="card-header">
-					<h4 class="my-0 font-weight-normal">Cannabis</h4>
-				</div>
-				<div class="card-body">
-					<h1 class="card-title pricing-card-title">$100</h1>
-					<button type="button" class="btn btn-block btn-outline-primary"
-						onClick="cartLS.add({id: 1, name: 'Nike Air', price: 100})">Add to
-						Cart</button>
-				</div>
-			</div>
-			<div class="card mb-4 shadow-sm">
-				<div class="card-header">
-					<h4 class="my-0 font-weight-normal">Ecstasy</h4>
-				</div>
-				<div class="card-body">
-					<h1 class="card-title pricing-card-title">$120</h1>
-					<button type="button" class="btn btn-block btn-outline-primary"
-						onClick="cartLS.add({id: 2, name: 'Adidas Superstar', price: 120})">Add to
-						Cart</button>
-				</div>
-			</div>
-			<div class="card mb-4 shadow-sm">
-				<div class="card-header">
-					<h4 class="my-0 font-weight-normal">LSD</h4>
-				</div>
-				<div class="card-body">
-					<h1 class="card-title pricing-card-title">$130</h1>
-					<button type="button" class="btn btn-block btn-outline-primary"
-						onClick="cartLS.add({id: 3, name: 'Puma St Runner', price: 130})">Add to
-						Cart</button>
-				</div>
-			</div>
-		</div>
-
-
-        <div class="card mb-4 shadow-sm">
-			<div class="card-header">
-				<h4 class="my-0 font-weight-normal">Ecstasy</h4>
-			</div>
-			<div class="card-body">
-				<h1 class="card-title pricing-card-title">$120</h1>
-				<button type="button" class="btn btn-block btn-outline-primary"
-					onClick="cartLS.add({id: 2, name: 'Adidas Superstar', price: 120})">Add to
-					Cart</button>
-			</div>
-		</div>
+		
 
         {{!---------------->Cart<---------------}}
 		<div class="card mb-4 shadow-sm">
@@ -115,9 +66,10 @@
 	</div>
 	<script>
 		function renderCart(items) {
+            console.log(items);
 			const $cart = document.querySelector(".cart")
 			const $total = document.querySelector(".total")
-
+            console.log($cart);
 			$cart.innerHTML = items.map((item) => `
 					<tr>
 						<td>#${item.id}</td>
@@ -137,7 +89,8 @@
 
 			$total.innerHTML = "$" + cartLS.total()
 		}
-		renderCart(cartLS.list())
+        console.log(cartLS);
+		renderCart(cartLS.list());
 		cartLS.onChange(renderCart)
 	</script>
 </body>
