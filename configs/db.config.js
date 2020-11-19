@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 mongoose
-    .connect('mongodb://localhost/drugsdb', {
+    .connect(process.env.MONGOURIATLAS || 'mongodb://localhost/drugsdb', {
         useCreateIndex: true,
         useNewUrlParser: true,
         useUnifiedTopology: true
