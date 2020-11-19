@@ -177,6 +177,11 @@ router.get('/message', (req, res, next) => {
 
 });
 
+router.get('/payment', (req, res, next) => {
+    res.render('payment');
+
+});
+
 router.get('/auth/google', passport.authenticate('google', {
     scope: ['profile']
 }))

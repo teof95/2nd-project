@@ -90,7 +90,7 @@ li a {
 }
 
 li a:hover:not(.active),
-button:hover {
+button.logout:hover {
     background-color: rgb(204, 45, 45);
 }
 
@@ -518,6 +518,7 @@ h2 em {
     -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
     -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
     transition: all 0.4s ease 0s;
+    cursor: pointer;
 }
 
 .drugscontainer {
@@ -528,7 +529,7 @@ h2 em {
     align-items: center;
     width: 65%;
     margin-left: 20%;
-    background: rgba(131, 131, 131, 0.4);
+    background: rgba(186, 195, 224, 0.7);
 }
 
 .onedrug {
@@ -579,10 +580,13 @@ h2 em {
 
 .usrbtn .main-wsbtn {
     display: inline-block;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .usrbtn .main-wsbtn a {
-    display: inline-block;
     background-color: #fff;
     border: 2px solid #fff;
     padding: 8px 15px;
@@ -667,9 +671,9 @@ h2 em {
 }
 
 .imgbtns {
-    display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
+    display: flex;
 }
 
 .imgtxt {
@@ -682,6 +686,7 @@ h2 em {
     margin-left: 20%;
     background: rgba(255, 255, 255, 0.4);
     padding: 20px;
+    margin-top: 20px;
 }
 
 .info {
