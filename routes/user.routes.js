@@ -126,15 +126,15 @@ router.post('/login', (req, res, next) => {
 
 
 
-// //--------------------------------------->Main section<-----------------------------
+//--------------------------------------->Main section<-----------------------------
 
-// router.get('/main', (req, res, next) => {
-//     if (req.session.user) {
-//         res.render('main');
-//     } else {
-//         res.redirect('/login')
-//     }
-// });
+router.get('/main', (req, res, next) => {
+    if (req.session.user) {
+        res.render('main');
+    } else {
+        res.redirect('/login')
+    }
+});
 
 
 // //--------------------------------------->Private section<-----------------------------
