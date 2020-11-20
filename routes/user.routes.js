@@ -33,8 +33,6 @@ router.post("/signup", (req, res, next) => {
         return;
     }
 
-
-
     // Strong password pattern.
     const strongPasswordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
 
@@ -75,18 +73,11 @@ router.post("/signup", (req, res, next) => {
         .catch((err) => next(err));
 });
 
-
-
-
 //--------------------------------------->Login section<-----------------------------
-
-
 //to display the login form to users
 router.get('/login', (req, res) => {
     res.render('login')
 });
-
-
 
 router.post('/login', (req, res, next) => {
     console.log('SESSION =====> ', req.session);
@@ -126,29 +117,6 @@ router.post('/login', (req, res, next) => {
 
 
 
-// //--------------------------------------->Main section<-----------------------------
-
-// router.get('/main', (req, res, next) => {
-//     if (req.session.user) {
-//         res.render('main');
-//     } else {
-//         res.redirect('/login')
-//     }
-// });
-
-
-// //--------------------------------------->Private section<-----------------------------
-
-// router.get('/private', (req, res) => {
-//     if (req.session.user) {
-//         res.render('private');
-//     } else {
-//         res.redirect('/login')
-//     }
-// });
-
-
-
 //--------------------------------------->User Profile section<-----------------------------
 
 
@@ -156,8 +124,6 @@ router.post('/login', (req, res, next) => {
 router.get("/user-profile", (req, res) => {
     res.render("user-profile", { user: req.session.user });
 });
-
-
 
 //--------------------------------------->Logout section<-----------------------------
 
@@ -168,22 +134,23 @@ router.post("/logout", (req, res) => {
     console.log("You logged out")
 });
 
-
-
-
 //---------------------------------------->message<--------------------------------->
 router.get('/message', (req, res, next) => {
     res.render('message');
 
 });
 
+//---------------------------------------->payment<--------------------------------->
+
 router.get('/payment', (req, res, next) => {
     res.render('payment');
 
 });
 
+//---------------------------------------->google authenticate<--------------------------------->
+
 router.get('/auth/google', passport.authenticate('google', {
-    scope: ['profile']
+    scope: ['profile', 'email']
 }))
 
 router.get('/auth/google/redirect', passport.authenticate('google'), (req, res) => {
@@ -191,8 +158,6 @@ router.get('/auth/google/redirect', passport.authenticate('google'), (req, res) 
     req.session.user = req.user
     res.redirect("/user-profile");
 });
-
-
 
 
 module.exports = router;

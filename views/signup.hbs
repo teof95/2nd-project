@@ -1,22 +1,5 @@
-{{!-- 
-<div id="signup">
-  <h2>Signup</h2>
-  <form action="/signup" method="POST">
-    <label for="input-username">Username</label>
-    <input type="text" id="input-username" name="username" placeholder="Your username" />
- 
-   
- 
-    <label for="input-password">Password</label>
-    <input type="password" name="password" id="input-password" placeholder="********" />
- 
-    <button type="submit">Create account</button> --}}
-
-
-
 <div id="signup"></div>
-  <form action="/signup" method="POST">
-
+<form action="/signup" method="POST">
 <div class='bold-line'></div>
 <div class='container2'>
   <div class='window'>
@@ -29,7 +12,7 @@
         <input type='password' name='password' placeholder='Password' class='input-line full-width'></input>
 
       </div>
-      <a class='google-btn' href="/auth/google">or continue with <span class='highlight'>Google</span></a>
+      <a class='google-btn' href="/auth/google">or continue with <span class='highlight'><img src="https://media.giphy.com/media/2epS8zhisYtHDCKrWv/giphy.gif" style="width: 100px;"</span></a>
           {{#if errorMessage}}
       <p class="error">{{errorMessage}}</p>
     {{/if}}
@@ -37,21 +20,9 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
   {{#if errorMessage}}
   <p class="error">{{errorMessage}}</p>
   {{/if}}
-  
-
   {{#if validationError}}
   <p class="error">{{validationError}}</p>
   {{/if}}

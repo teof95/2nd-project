@@ -1,44 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{title}}</title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
-
-
     <nav>
-      <a href="/"><img src="https://freepikpsd.com/wp-content/uploads/2019/10/drug-logo-png-4-Transparent-Images.png" width="70" height="70"></a>
+      <a href="/"><img src="/images/IRONLAB.png" height="50"></a>
         <ul>
-          
           <li><a href="/"> Home </a></li>
           <li><a href="/signup">Sign-up</a></li>
-
           {{#if user}}
           <li><form action='/logout' method="post">    <button href="/" class='logout'type="submit">Logout</button></form></li>
           {{else}}
           <li><a href="/login"> Login</a></li>
           {{/if}} 
-
           {{#if user}}<li><a href="/user-profile"> {{ user.username }} {{else}}<p></p>{{/if}}</a></li> 
-
-        
         </ul>
   </nav>
-
-
   </head>
-
   <body>
-
-
-
-
     {{{body}}}
-
     <script src="/javascripts/script.js"></script>
   </body>
-
 </html>
