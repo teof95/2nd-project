@@ -1,22 +1,5 @@
-{{!-- 
-<div id="signup">
-  <h2>Signup</h2>
-  <form action="/signup" method="POST">
-    <label for="input-username">Username</label>
-    <input type="text" id="input-username" name="username" placeholder="Your username" />
- 
-   
- 
-    <label for="input-password">Password</label>
-    <input type="password" name="password" id="input-password" placeholder="********" />
- 
-    <button type="submit">Create account</button> --}}
-
-
-
 <div id="signup"></div>
-  <form action="/signup" method="POST">
-
+<form action="/signup" method="POST">
 <div class='bold-line'></div>
 <div class='container2'>
   <div class='window'>
@@ -37,21 +20,9 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
   {{#if errorMessage}}
   <p class="error">{{errorMessage}}</p>
   {{/if}}
-  
-
   {{#if validationError}}
   <p class="error">{{validationError}}</p>
   {{/if}}

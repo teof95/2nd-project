@@ -1,6 +1,5 @@
 <div id="form">
-  <form action="/login" method="POST">
-
+<form action="/login" method="POST">
 <div class='bold-line'></div>
 <div class='container2'>
   <div class='window'>
@@ -11,11 +10,8 @@
       <div class='input-fields'>
         <input type='username' name='username' placeholder='Username' class='input-line full-width'></input>
         <input type='password' name='password' placeholder='Password' class='input-line full-width'></input>
-
       </div>
       <a class='google-btn' href="/auth/google">or continue with <span class='highlight'><img src="https://media.giphy.com/media/2epS8zhisYtHDCKrWv/giphy.gif" style="width: 100px;">
-       
-        
         </span></a>
           {{#if errorMessage}}
       <p class="error">{{errorMessage}}</p>

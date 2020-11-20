@@ -33,8 +33,6 @@ router.post("/signup", (req, res, next) => {
         return;
     }
 
-
-
     // Strong password pattern.
     const strongPasswordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
 
@@ -75,18 +73,11 @@ router.post("/signup", (req, res, next) => {
         .catch((err) => next(err));
 });
 
-
-
-
 //--------------------------------------->Login section<-----------------------------
-
-
 //to display the login form to users
 router.get('/login', (req, res) => {
     res.render('login')
 });
-
-
 
 router.post('/login', (req, res, next) => {
     console.log('SESSION =====> ', req.session);
@@ -134,8 +125,6 @@ router.get("/user-profile", (req, res) => {
     res.render("user-profile", { user: req.session.user });
 });
 
-
-
 //--------------------------------------->Logout section<-----------------------------
 
 router.post("/logout", (req, res) => {
@@ -144,9 +133,6 @@ router.post("/logout", (req, res) => {
     res.redirect("/");
     console.log("You logged out")
 });
-
-
-
 
 //---------------------------------------->message<--------------------------------->
 router.get('/message', (req, res, next) => {
@@ -161,7 +147,7 @@ router.get('/payment', (req, res, next) => {
 
 });
 
-//---------------------------------------->authenticate<--------------------------------->
+//---------------------------------------->google authenticate<--------------------------------->
 
 router.get('/auth/google', passport.authenticate('google', {
     scope: ['profile', 'email']
@@ -172,8 +158,6 @@ router.get('/auth/google/redirect', passport.authenticate('google'), (req, res) 
     req.session.user = req.user
     res.redirect("/user-profile");
 });
-
-
 
 
 module.exports = router;
