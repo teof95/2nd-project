@@ -40,11 +40,6 @@
 </div>
    
 
-
-
-
-
-
 	<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-black border-bottom shadow-sm">
 		<h1 class="my-0 mr-md-auto font-weight-normal">DRUG SHOPPING BASKET</h1>
 	</div>
@@ -76,17 +71,10 @@
         {{!-- -----> End of cart<----- --}}
 	</div>
 
-
-
-
-
 		<button class="cartbtn" onclick="window.location.href='/payment'">
    				<a>Order now!</a>
 		</button>
 	
-
-
-
 	<script>
 		function renderCart(items) {
             console.log(items);
@@ -115,6 +103,7 @@
         console.log(cartLS);
 		renderCart(cartLS.list());
 		cartLS.onChange(renderCart)
+		console.log($total.innerHTML)
 	</script>
 </body>
 

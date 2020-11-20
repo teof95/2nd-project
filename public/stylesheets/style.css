@@ -55,11 +55,13 @@ input[type=submit]:hover {
     margin: 20px;
     float: left;
     width: 40%;
+    margin-left: 100px;
 }
 
 .google-map {
     float: right;
     margin: 20px;
+    margin-right: 100px;
 }
 
 nav {

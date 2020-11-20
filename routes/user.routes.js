@@ -126,29 +126,6 @@ router.post('/login', (req, res, next) => {
 
 
 
-//--------------------------------------->Main section<-----------------------------
-
-router.get('/main', (req, res, next) => {
-    if (req.session.user) {
-        res.render('main');
-    } else {
-        res.redirect('/login')
-    }
-});
-
-
-// //--------------------------------------->Private section<-----------------------------
-
-// router.get('/private', (req, res) => {
-//     if (req.session.user) {
-//         res.render('private');
-//     } else {
-//         res.redirect('/login')
-//     }
-// });
-
-
-
 //--------------------------------------->User Profile section<-----------------------------
 
 
@@ -187,7 +164,7 @@ router.get('/payment', (req, res, next) => {
 //---------------------------------------->authenticate<--------------------------------->
 
 router.get('/auth/google', passport.authenticate('google', {
-    scope: ['profile']
+    scope: ['profile', 'email']
 }))
 
 router.get('/auth/google/redirect', passport.authenticate('google'), (req, res) => {
